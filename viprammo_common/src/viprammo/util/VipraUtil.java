@@ -2,6 +2,9 @@ package viprammo.util;
 
 import java.util.List;
 
+import viprammo.TraceLevel;
+import static viprammo.Constants.*;
+
 /**
  * viprammo用のutilクラス（インスタンス化禁止）
  * @author Yukihiro
@@ -23,5 +26,53 @@ public class VipraUtil {
 			b[i] = src_list.get(i);
 		}
 		return b;
+	}
+
+	/**
+	 * 標準出力へのトレース
+	 * @param text 
+	 */
+	public static void Trace(Object text) {
+		Trace(text, TraceLevel.kNotice);
+	}
+	
+	/**
+	 * 
+	 * @param text
+	 */
+	public static void TraceError(Object text) {
+		Trace(text, TraceLevel.kError);
+	}
+
+	/**
+	 * 標準出力へのトレース
+	 * @param text
+	 * @param level トレースの重要度
+	 */
+	public static void Trace(Object text, TraceLevel level)
+	{
+		if (kDebug && kTraceLevel.ordinal() <= level.ordinal()) {
+			System.out.println(text);
+		}
+	}
+
+	/**
+	 * 例外のスタックトレースを標準出力へ
+	 * @param exception 
+	 */
+	public static void Trace(Exception exception) {
+		if (kDebug && kTraceLevel.ordinal() <= TraceLevel.kError.ordinal()) {
+			exception.printStackTrace();
+		}
+	}
+
+	/**
+	 * 例外のスタックトレースを標準出力へ
+	 * @param exception 
+	 */
+	public static void Trace(Error exception) {
+		if (kDebug && kTraceLevel.ordinal() <= TraceLevel.kFatal.ordinal()) {
+			exception.printStackTrace();
+		}
 	}
 }
