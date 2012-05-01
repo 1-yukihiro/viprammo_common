@@ -1,17 +1,17 @@
-package viprammo.util;
+ï»¿package viprammo.util;
 
 import java.util.logging.Level;
 
 public class GLOBAL_CONFIG {
 
 	/**
-	 * Level‚Ì‡”Ô@@@@@@finest < finer < fine < config < info < warning < severe
-	 * ‚±‚ÌƒƒOƒŒƒxƒ‹g‚¢‚Ã‚ç‚¢‚Ë debug‚Æ‚©‚ª‚¢‚¢‚æ‚Ë[
+	 * Levelã®é †ç•ªã€€ã€€ã€€ã€€ã€€ã€€finest < finer < fine < config < info < warning < severe
+	 * ã“ã®ãƒ­ã‚°ãƒ¬ãƒ™ãƒ«ä½¿ã„ã¥ã‚‰ã„ã­ debugã¨ã‹ãŒã„ã„ã‚ˆã­ãƒ¼
 	 */
 	public static Level LOG_LEVEL = Level.INFO;
 	
 	/**
-	 * ƒƒOƒŒƒxƒ‹İ’è—p•¶š—ñiGUI‚Åg—p‚·‚éj
+	 * ãƒ­ã‚°ãƒ¬ãƒ™ãƒ«è¨­å®šç”¨æ–‡å­—åˆ—ï¼ˆGUIã§ä½¿ç”¨ã™ã‚‹ï¼‰
 	 */
 	public static String[] LOG_LEVEL_STR = {"FINEST", "FIENER", "FINE", "CONFIG", "INFO", "WARNING", "SEVERE"};
 	

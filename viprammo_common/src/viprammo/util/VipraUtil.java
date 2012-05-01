@@ -1,9 +1,9 @@
-package viprammo.util;
+ï»¿package viprammo.util;
 
 import java.util.List;
 
 /**
- * viprammo—p‚ÌutilƒNƒ‰ƒXiƒCƒ“ƒXƒ^ƒ“ƒX‰»‹Ö~j
+ * viprammoç”¨ã®utilã‚¯ãƒ©ã‚¹ï¼ˆã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–ç¦æ­¢ï¼‰
  * @author Yukihiro
  *
  */
@@ -12,10 +12,10 @@ public class VipraUtil {
 	private VipraUtil() {}
 	
 	/**
-	 * ByteƒNƒ‰ƒX‚ÌList‚ğƒvƒŠƒ~ƒeƒBƒu‚Èbyte”z—ñ‚É‚·‚éƒ†[ƒeƒBƒŠƒeƒB
-	 * ‚Ä‚©‚±‚ê—v‚é‚ÌHƒI[ƒgƒ{ƒNƒVƒ“ƒO‚Á‚Ä‹@”\‚ª‚ ‚é‚Í‚¸‚¾‚æ‚ËBBB1.5€‹’‚É‚µ‚Ä‚é‚©‚çƒ_ƒH
-	 * @param src_list Byte‚Ì“ü‚Á‚½List
-	 * @return ƒvƒŠƒ~ƒeƒBƒubyte‚Ì”z—ñ
+	 * Byteã‚¯ãƒ©ã‚¹ã®Listã‚’ãƒ—ãƒªãƒŸãƒ†ã‚£ãƒ–ãªbyteé…åˆ—ã«ã™ã‚‹ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£
+	 * ã¦ã‹ã“ã‚Œè¦ã‚‹ã®ï¼Ÿã‚ªãƒ¼ãƒˆãƒœã‚¯ã‚·ãƒ³ã‚°ã£ã¦æ©Ÿèƒ½ãŒã‚ã‚‹ã¯ãšã ã‚ˆã­ã€‚ã€‚ã€‚1.5æº–æ‹ ã«ã—ã¦ã‚‹ã‹ã‚‰ãƒ€ãƒ¡ï¼Ÿ
+	 * @param src_list Byteã®å…¥ã£ãŸList
+	 * @return ãƒ—ãƒªãƒŸãƒ†ã‚£ãƒ–byteã®é…åˆ—
 	 */
 	public static byte[] CollectionsByteToPbyte(List<Byte> src_list) {
 		byte[] b = new byte[(int)src_list.size()];
