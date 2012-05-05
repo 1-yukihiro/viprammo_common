@@ -9,7 +9,7 @@ import org.msgpack.annotation.MessagePackMessage;
  *
  */
 @MessagePackMessage
-public abstract class Message {
+public class Message {
 	
 	/**
 	 * メッセージ種別
