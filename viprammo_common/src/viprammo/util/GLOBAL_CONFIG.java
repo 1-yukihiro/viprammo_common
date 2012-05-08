@@ -15,4 +15,9 @@ public class GLOBAL_CONFIG {
 	 */
 	public static String[] LOG_LEVEL_STR = {"FINEST", "FIENER", "FINE", "CONFIG", "INFO", "WARNING", "SEVERE"};
 	
+	/**
+	 * クライアントの受信バッファサイズ
+	 */
+	public static int CLIENT_BUFFER_SIZE = 1024;
+	
 }
