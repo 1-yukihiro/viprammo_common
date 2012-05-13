@@ -1,22 +1,27 @@
 package viprammo.message;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.msgpack.annotation.MessagePackMessage;
 
-@MessagePackMessage
-public class CommandMessage {
+public class CommandMessage implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * メッセージヘッダー
 	 */
-	public MessageHeader msg_header;
+	private MessageHeader msg_header;
 	
 	/**
 	 * メッセージリスト ホントはprivateにしたいがmessagepack的に無理らしい
 	 */
-	public List<Message> message_list = new ArrayList<Message>();
+	private List<Message> message_list = new ArrayList<Message>();
 	
 	/**
 	 * メッセージリストを返す

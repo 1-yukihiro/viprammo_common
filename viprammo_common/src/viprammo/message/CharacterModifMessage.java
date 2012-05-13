@@ -1,5 +1,7 @@
 package viprammo.message;
 
+import viparammo.gamedata.CharacterData;
+
 public class CharacterModifMessage extends Message {
 
 	private int hp = 100;
@@ -8,7 +10,7 @@ public class CharacterModifMessage extends Message {
 	private int area;
 	private int x;
 	private int y;
-	private int muki;
+	private String muki;
 	
 	public CharacterModifMessage() {
 		this.message_kind = MessageKIND.KIND_CHARACTER_MODIF;
@@ -34,12 +36,12 @@ public class CharacterModifMessage extends Message {
 		return y;
 	}
 
-	public int getMuki() {
+	public String getMuki() {
 		return this.muki;
 	}
 	
-	public void setMuki(int muki_cd) {
-		this.muki = muki_cd;
+	public void setMuki(String muki) {
+		this.muki = muki;
 	}
 	
 	public void setHP(int hp) {
