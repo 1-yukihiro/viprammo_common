@@ -1,9 +1,15 @@
 package viprammo.message;
 
+import java.io.Serializable;
+
 import viparammo.gamedata.CharacterData;
 
-public class CharacterModifMessage extends Message {
+public class CharacterModifMessage extends Message implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int hp = 100;
 	private int mp = 100;
 	

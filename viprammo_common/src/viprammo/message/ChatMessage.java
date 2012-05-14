@@ -1,6 +1,13 @@
 package viprammo.message;
 
-public class ChatMessage extends Message {
+import java.io.Serializable;
+
+public class ChatMessage extends Message implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private String message_str = "";
 

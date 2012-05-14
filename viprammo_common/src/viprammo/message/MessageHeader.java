@@ -1,6 +1,13 @@
 package viprammo.message;
 
-public class MessageHeader {
+import java.io.Serializable;
+
+public class MessageHeader implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	//ヘッダーに入れる文字列VIPRAMMOでも入れとくか
 	private String message_string = "VIPARAMMO";

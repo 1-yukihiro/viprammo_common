@@ -19,7 +19,7 @@ public class CommandMessage implements Serializable {
 	private MessageHeader msg_header;
 	
 	/**
-	 * メッセージリスト ホントはprivateにしたいがmessagepack的に無理らしい
+	 * メッセージリスト
 	 */
 	private List<Message> message_list = new ArrayList<Message>();
 	

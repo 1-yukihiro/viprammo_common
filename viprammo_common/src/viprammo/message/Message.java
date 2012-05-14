@@ -1,5 +1,7 @@
 package viprammo.message;
 
+import java.io.Serializable;
+
 import org.msgpack.annotation.MessagePackMessage;
 
 /**
@@ -9,8 +11,13 @@ import org.msgpack.annotation.MessagePackMessage;
  *
  */
 @MessagePackMessage
-public class Message {
+public class Message implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/**
 	 * メッセージ種別
 	 */
