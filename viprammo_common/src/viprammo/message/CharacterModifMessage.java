@@ -18,8 +18,18 @@ public class CharacterModifMessage extends Message implements Serializable {
 	private int y;
 	private String muki;
 	
+	private String character_prefix;
+	
 	public CharacterModifMessage() {
 		this.message_kind = MessageKIND.KIND_CHARACTER_MODIF;
+	}
+	
+	public String getCharacter_prefix() {
+		return this.character_prefix;
+	}
+	
+	public void setCharacter_prefix(String str) {
+		this.character_prefix = str;
 	}
 	
 	public int getHP() {
